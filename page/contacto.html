@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/estilos.css">
     <link rel="shortcut icon" href="../imagenes/logo.png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilos.css">
     <title>Kupsa</title>
 </head>
 <body>
@@ -22,12 +23,26 @@
                 </div>
                 <div class="contacto">
                     <div class="rrss">
-                        <div><a href="#"><i class="bi bi-facebook rrss__iconoSmall rrss__iconoLink"></i></a></div>
-                        <div><a href="#"><i class="bi bi-instagram rrss__iconoSmall rrss__iconoLink"></i></a></div>
-                        <div><a href="#"><i class="bi bi-linkedin rrss__iconoSmall rrss__iconoLink"></i></a></div>
-                        <div><a href="#"><i class="bi bi-pinterest rrss__iconoSmall rrss__iconoLink"></i></a></div>
-                        <div><p class="rrss__iconoSmall"><i class="bi bi-envelope-at rrss__iconoNoLink"></i>contacto@kupsa.cl</p></div>
-                        <div><p class="rrss__iconoSmall"><i class="bi bi-telephone rrss__iconoNoLink"></i>+56 9 4654 9972</p></div>
+                        <ul class="list-inline m-0 p-0">
+                            <li class="list-inline-item m-0 p-0">
+                                <a href="#"><i class="bi bi-facebook rrss__iconoSmall rrss__iconoLink"></i></a>
+                            </li>
+                            <li class="list-inline-item m-0 p-0">
+                                <a href="#"><i class="bi bi-instagram rrss__iconoSmall rrss__iconoLink"></i></a>
+                            </li>
+                            <li class="list-inline-item m-0 p-0">
+                                <a href="#"><i class="bi bi-linkedin rrss__iconoSmall rrss__iconoLink"></i></a>
+                            </li>
+                            <li class="list-inline-item m-0 p-0">
+                                <a href="#"><i class="bi bi-pinterest rrss__iconoSmall rrss__iconoLink"></i></a>
+                            </li>
+                            <li class="list-inline-item m-0 p-0">
+                                <p class="rrss__iconoSmall"><i class="bi bi-envelope-at rrss__iconoNoLink"></i>contacto@kupsa.cl</p>
+                            </li>
+                            <li class="list-inline-item m-0 p-0">
+                                <p class="rrss__iconoSmall"><i class="bi bi-telephone rrss__iconoNoLink"></i>+56 9 4654 9972</p>
+                            </li>
+                        </ul>
                     </div>
                 </div>  
                 <nav class="menu">
@@ -68,58 +83,85 @@
         <section class="contactoGrid">
             <!--Hagamos-->
             <div class="secHagamos">
-                <h2 class="contacto_titulo">Hagamos contacto</h2>
-                <div>
-                    <h3><i class="bi bi-geo-alt icono icono--contacto"></i>Dirección</h3>
-                    <p>Direción 483, Los Conquistadores, Amazonas</p>
-                </div>
-                <div>
-                    <h3><i class="bi bi-telephone icono icono--contacto"></i>Telefono</h3>
-                    <p>+56 9 3216 9854</p>
-                </div>
-                <div>
-                    <h3><i class="bi bi-envelope-at icono icono--contacto"></i>Correo</h3>
-                    <p>Soporte: soporte@kupsa.cl</p>
-                    <p>Ventas: ventas@kupsa.cl</p>
-                    <p>General: contacto@kupsa.cl</p>
-                </div>
-                <div>
-                    <h3><i class="bi bi-clock icono icono--contacto"></i></i>Horario Atención</h3>
-                    <p>Lu a Vi, de 09:00 am a 18:00 pm</p>
-                    <p>____Sa de 09:00 am a 15:00 pm</p>
+                <div class="container">
+                    <div class="row">
+                        <div>
+                            <h2 class="contacto_titulo">Hagamos contacto</h2>
+                        </div>
+                        <div>
+                            <h3><i class="bi bi-geo-alt icono icono--contacto"></i>Dirección</h3>
+                            <p>Direción Av. Los Alerces 666</p>
+                        </div>
+                        <div>
+                            <h3><i class="bi bi-telephone icono icono--contacto"></i>Teléfono</h3>
+                            <p>+56 9 3216 9854</p>
+                        </div>
+                        <div>
+                            <h3><i class="bi bi-envelope-at icono icono--contacto"></i>Correo</h3>
+                            <p>Soporte: soporte@kupsa.cl</p>
+                            <p>Ventas: ventas@kupsa.cl</p>
+                            <p>General: contacto@kupsa.cl</p>
+                        </div>
+                        <div>
+                            <h3><i class="bi bi-clock icono icono--contacto"></i></i>Horario Atención</h3>
+                            <p>Lu a Vi, de 09:00 am a 18:00 pm</p>
+                            <p>Sa de 09:00 am a 15:00 pm</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+
             <!--Contactenos-->
             <div class="secContactenos">
-                <form class="secContactenos__formulario" action="">
-                    <h2 class="contacto_titulo">Contáctenos</h2>
-                    <div class="secContactenos__formulario__dato">
-                        <label for="iasunto">Asunto</label> 
-                        <select class="secContactenos__campo" name="iasunto">
-                            <option value="1">Servicio al cliente</option>
-                            <option value="2">Servicio técnico</option>
-                            <option value="3">Otro</option>
-                        </select> 
+                <div class="container">
+                    <div class="row">
+                        <div>
+                            <h2 class="contacto_titulo">Contáctenos</h2>
+                        </div>                        
+                        <form>                           
+                            <div class="input-group mb-3">
+                                <label class="input-group-text" for="inputGroupSelect01">Asunto</label>
+                                <select class="form-select" id="inputGroupSelect01">
+                                    <option selected>Selecciona asunto a tratar ...</option>
+                                    <option value="1">Servicio al cliente</option>
+                                    <option value="2">Servicio técnico</option>
+                                    <option value="3">Otro</option>
+                                </select>
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1">Nombre(s)</span>
+                                <input type="text" class="form-control" placeholder="Tu(s) nombre(s)" aria-label="Nombre(s)" aria-describedby="basic-addon1" required>
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1">Apellido(s)</span>
+                                <input type="text" class="form-control" placeholder="Tu(s) apellido(s)" aria-label="Apellido(s)" aria-describedby="basic-addon1" required>
+                            </div> 
+
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1">Correo</span>
+                                <input type="email" class="form-control" placeholder="Tu correo" aria-label="Correo" aria-describedby="basic-addon1" required>
+                            </div>  
+
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1">Celular</span>
+                                <input type="number" class="form-control" placeholder="Tu celular" aria-label="Celular" aria-describedby="basic-addon1" required>
+                            </div>  
+                                                    
+                            <div class="input-group mb-3">
+                                <label class="input-group-text" for="inputGroupFile01">Adjuntar archivo</label>
+                                <input type="file" class="form-control" id="inputGroupFile01">
+                            </div>
+                                                    
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">Mensaje</span>
+                                <textarea class="form-control" aria-label="With textarea" placeholder="Aquí escribe tu mensaje"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary mb-1 btnEnviar">Enviar</button>
+                        </form>
                     </div>
-                    <div class="secContactenos__formulario__dato">
-                        <input class="secContactenos__campo" type="text" name="inombre" placeholder="Nombre*" required>
-                        <input class="secContactenos__campo" type="text" name="iapellido" placeholder="Apellido*" required>
-                    </div>
-                    <div class="secContactenos__formulario__dato">
-                        <input class="secContactenos__campo" type="email" name="icorreo" placeholder="Tu correo*" required>
-                        <input class="secContactenos__campo" type="number" name="icelular" placeholder="Tu celular*" required>                        
-                    </div>
-                    <div class="secContactenos__formulario__dato">
-                        <label for="iarchivo">Archivo adjunto</label>
-                        <input class="secContactenos__campo" type="file" name="iarchivo">  
-                    </div>
-                    <div class="secContactenos__formulario__dato">
-                        <textarea class="secContactenos__campo" name="imensaje" placeholder="Aquí escribe tu mensaje*"></textarea>
-                    </div>
-                    <div class="secContactenos__formulario__dato">
-                        <input class="secContactenos__campo" type="submit" value="Enviar">
-                    </div>
-                </form> 
+                </div>
             </div>
         </section>
     </main>
@@ -198,5 +240,6 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>          
 </body>
 </html>

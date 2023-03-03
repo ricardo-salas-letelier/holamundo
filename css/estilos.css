@@ -65,7 +65,17 @@ body{
 }
 .icono--contacto {
     margin-right: 5px;
+    font-size: large;
     color:#5a68e1;
+}
+.btnEnviar {
+    background-color: coral;
+    color:#353434;
+    font-weight: normal;
+}
+.btnEnviar:hover {
+    color:#ffffff;
+    background-color: #5a68e1;
 }
 
 /*--BEGIN Tarjetas--*/
@@ -450,14 +460,16 @@ body{
     justify-content: center;
     align-content: start;
     column-gap: 50px;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 .contacto_titulo {
     border-top: #737272 solid 1px;
-    width: 50%;
+    font-weight: bold;
 }
 .secHagamos {
     grid-area: secHagamos;
-    padding-left: 100px;
+    padding-left: 0px;
 
     display: flex;
     flex-direction: column;
@@ -465,7 +477,7 @@ body{
 }
 .secContactenos {
     grid-area: secContactenos;
-    padding-right: 100px;
+    padding-right: 0px;
 }
 .secContactenos__formulario {
     display: flex;
