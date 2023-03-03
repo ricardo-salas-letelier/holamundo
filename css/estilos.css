@@ -690,6 +690,9 @@ body{
         flex-wrap: wrap;
         gap: 10px;
     }
+    .prdCategorias {
+        display: none;
+    }   
 }
 @media screen and (max-width: 768px) {
     .secImagenGrande {
@@ -711,13 +714,6 @@ body{
     }
     .secHagamos {
         padding-left: 0px
-    }
-    .prdCategorias{
-        position: static;
-    }    
-    .prdCategorias__mrg{
-        margin-left: 0px;
-        font-size: small;
     }
     .prdView {
         font-size: small;
