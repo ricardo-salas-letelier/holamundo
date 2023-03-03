@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/estilos.css">
     <link rel="shortcut icon" href="../imagenes/logo.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilos.css">
     <title>Kupsa</title>
 </head>
 <body>
@@ -17,30 +18,61 @@
             <div class="cabGrid">
                 <div class="logo">
                     <a href="../index.html">
-                        <img src="../imagenes/logo_nombre.png" alt="Logo" title="Kupsa">
+                        <img class="imgAnchoTotal" src="../imagenes/logo_nombre.png" alt="Logo" title="Kupsa">
                     </a>
                 </div>
                 <div class="contacto">
                     <div class="rrss">
-                        <div><a href="#"><i class="bi bi-facebook rrss__iconoSmall rrss__iconoLink"></i></a></div>
-                        <div><a href="#"><i class="bi bi-instagram rrss__iconoSmall rrss__iconoLink"></i></a></div>
-                        <div><a href="#"><i class="bi bi-linkedin rrss__iconoSmall rrss__iconoLink"></i></a></div>
-                        <div><a href="#"><i class="bi bi-pinterest rrss__iconoSmall rrss__iconoLink"></i></a></div>
-                        <div><p class="rrss__iconoSmall"><i class="bi bi-envelope-at rrss__iconoNoLink"></i>contacto@kupsa.cl</p></div>
-                        <div><p class="rrss__iconoSmall"><i class="bi bi-telephone rrss__iconoNoLink"></i>+56 9 4654 9972</p></div>
+                        <ul class="list-inline m-0 p-0">
+                            <li class="list-inline-item m-0 p-0">
+                                <a href="#"><i class="bi bi-facebook rrss__iconoSmall rrss__iconoLink"></i></a>
+                            </li>
+                            <li class="list-inline-item m-0 p-0">
+                                <a href="#"><i class="bi bi-instagram rrss__iconoSmall rrss__iconoLink"></i></a>
+                            </li>
+                            <li class="list-inline-item m-0 p-0">
+                                <a href="#"><i class="bi bi-linkedin rrss__iconoSmall rrss__iconoLink"></i></a>
+                            </li>
+                            <li class="list-inline-item m-0 p-0">
+                                <a href="#"><i class="bi bi-pinterest rrss__iconoSmall rrss__iconoLink"></i></a>
+                            </li>
+                            <li class="list-inline-item m-0 p-0">
+                                <p class="rrss__iconoSmall"><i class="bi bi-envelope-at rrss__iconoNoLink"></i>contacto@kupsa.cl</p>
+                            </li>
+                            <li class="list-inline-item m-0 p-0">
+                                <p class="rrss__iconoSmall"><i class="bi bi-telephone rrss__iconoNoLink"></i>+56 9 4654 9972</p>
+                            </li>
+                        </ul>
                     </div>
                 </div>  
-                <nav class="menu">
-                    <ul class="menu__opciones">
-                        <li class="menu__opciones__opcion"><a href="../index.html">Inicio</a></li>
-                        <li class="menu__opciones__opcion"><a href="./nosotros.html">Nosotros</a></li>
-                        <li class="menu__opciones__opcion"><a href="./productos.html">Productos</a></li>
-                        <li class="menu__opciones__opcion"><a href="./contacto.html">Contacto</a></li>
-                    </ul>
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav menu__opciones">
+                          <li class="nav-item menu__opciones__opcion">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                          </li>
+                          <li class="nav-item menu__opciones__opcion">
+                            <a class="nav-link" href="../page/nosotros.html">Nosotros</a>
+                          </li>
+                          <li class="nav-item menu__opciones__opcion">
+                            <a class="nav-link" href="../page/productos.html">Productos</a>
+                          </li>
+                          <li class="nav-item menu__opciones__opcion">
+                            <a class="nav-link" href="../page/contacto.html">Contacto</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                 </nav>
+
                 <div class="buscar">
                     <div class="buscar__buscarImagenes">
-                        <div class="buscar__buscar">
+                        <div class="buscar__input">
                             <input type="text" name="buscar" placeholder="Buscar ...">
                             <a href="#"><i class="bi bi-search buscar__icono"></i></a>
                         </div>
@@ -68,7 +100,7 @@
             <!--Categorias-->
             <aside class="prdCategorias">
                 <div class="prdCategorias__mrg">
-                    <h1>Categorias</h1>
+                    <h3>Categorias</h3>
                 </div>
                 <div class="prdCategorias__mrg">
                     <ul class="pieLista">
@@ -81,23 +113,23 @@
             <!--View-->
             <div class="prdView">
                 <div class="rrss">
-                    <h1><a href="#"><i class="bi bi-grid icono"></i></a></h1>
+                    <h3><a href="#"><i class="bi bi-grid icono"></i></a></h3>
                 </div>                        
                 <div class="rrss">
-                    <h1><a href="#"><i class="bi bi-border-width icono"></i></a></h1>
+                    <h3><a href="#"><i class="bi bi-border-width icono"></i></a></h3>
                 </div>
                 <div>
-                    <h2>Camas</h2>
+                    <h4>Camas</h4>
                 </div>
             </div>
             <!--Productos-->
             <div class="prdPrds">
                 <div class="trjProducto trjProducto--borde">
-                    <a href="./producto.html" title="Ver detalle">
+                    <a class="scale" href="./producto.html" title="Ver detalle">
                         <img class="imgAnchoTotal" src="../imagenes/base_cama_especial.png" alt="Base cama especial">
                     </a>
-                    <h3 class="trjProducto__titulo">Base cama especial</h3>
-                    <h4 class="trjProducto__titulo">$54.990</h4>
+                    <h5 class="trjProducto__titulo">Base cama especial</h5>
+                    <h5 class="trjProducto__titulo"><strong>$54.990</strong></h5>
                     <div class="trjProducto__icono">
                         <a href="./producto.html" title="Ver detalle"><i class="bi bi-eye icono"></i></i></a>
                         <a href="#" title="Lista deseos"><i class="bi bi-heart icono"></i></a>
@@ -105,11 +137,11 @@
                     </div>
                 </div>
                 <div class="trjProducto trjProducto--borde">
-                    <a href="./producto.html" title="Ver detalle">
+                    <a class="translate" href="./producto.html" title="Ver detalle">
                         <img class="imgAnchoTotal" src="../imagenes/base_cama_simple.png" alt="Basde cama simple">
                     </a>
-                    <h3 class="trjProducto__titulo">Basde cama simple</h3>
-                    <h4 class="trjProducto__titulo">$30.999</h4>
+                    <h5 class="trjProducto__titulo">Basde cama simple</h5>
+                    <h5 class="trjProducto__titulo"><strong>$30.999</strong></h5>
                     <div class="trjProducto__icono">
                         <a href="./producto.html" title="Ver detalle"><i class="bi bi-eye icono"></i></i></a>
                         <a href="#" title="Lista deseos"><i class="bi bi-heart icono"></i></a>
@@ -117,11 +149,11 @@
                     </div>
                 </div>
                 <div class="trjProducto trjProducto--borde">
-                    <a href="./producto.html" title="Ver detalle">
+                    <a class="scale" href="./producto.html" title="Ver detalle">
                         <img class="imgAnchoTotal" src="../imagenes/base_cama_madera.png" alt="Base cama madera">
                     </a>
-                    <h3 class="trjProducto__titulo">Base cama madera</h3>
-                    <h4 class="trjProducto__titulo">$25.000</h4>
+                    <h5 class="trjProducto__titulo">Base cama madera</h5>
+                    <h5 class="trjProducto__titulo"><strong>$25.000</strong></h5>
                     <div class="trjProducto__icono">
                         <a href="./producto.html" title="Ver detalle"><i class="bi bi-eye icono"></i></i></a>
                         <a href="#" title="Lista deseos"><i class="bi bi-heart icono"></i></a>
@@ -129,11 +161,11 @@
                     </div>
                 </div>
                 <div class="trjProducto trjProducto--borde">
-                    <a href="./producto.html" title="Ver detalle">
+                    <a class="translate" href="./producto.html" title="Ver detalle">
                         <img class="imgAnchoTotal" src="../imagenes/base_cama_linea_recta_madera.png" alt="Base cama línea recta">
                     </a>
-                    <h3 class="trjProducto__titulo">Base cama línea recta madera</h3>
-                    <h4 class="trjProducto__titulo">$54.990</h4>
+                    <h5 class="trjProducto__titulo">Base cama línea recta madera</h5>
+                    <h5 class="trjProducto__titulo"><strong>$54.990</strong></h5>
                     <div class="trjProducto__icono">
                         <a href="./producto.html" title="Ver detalle"><i class="bi bi-eye icono"></i></i></a>
                         <a href="#" title="Lista deseos"><i class="bi bi-heart icono"></i></a>
@@ -141,24 +173,11 @@
                     </div>
                 </div>
                 <div class="trjProducto trjProducto--borde">
-                    <a href="./producto.html" title="Ver detalle">
+                    <a class="scale" href="./producto.html" title="Ver detalle">
                         <img class="imgAnchoTotal" src="../imagenes/base_cama_linea_recta.png" alt="Base cama línea recta">
                     </a>
-                    <h3 class="trjProducto__titulo">Base cama línea recta</h3>
-                    <h4 class="trjProducto__titulo">$54.990</h4>
-                    <div class="trjProducto__icono">
-                        <a href="./producto.html" title="Ver detalle"><i class="bi bi-eye icono"></i></i></a>
-                        <a href="#" title="Lista deseos"><i class="bi bi-heart icono"></i></a>
-                        <a href="#" title="Sumar al carro"><i class="bi bi-cart icono"></i></a>
-                    </div>
-                </div> 
-                
-                <div class="trjProducto trjProducto--borde">
-                    <a href="./producto.html" title="Ver detalle">
-                        <img class="imgAnchoTotal" src="../imagenes/base_cama_especial.png" alt="Base cama especial">
-                    </a>
-                    <h3 class="trjProducto__titulo">Base cama especial</h3>
-                    <h4 class="trjProducto__titulo">$54.990</h4>
+                    <h5 class="trjProducto__titulo">Base cama línea recta</h5>
+                    <h5 class="trjProducto__titulo"><strong>$54.990</strong></h5>
                     <div class="trjProducto__icono">
                         <a href="./producto.html" title="Ver detalle"><i class="bi bi-eye icono"></i></i></a>
                         <a href="#" title="Lista deseos"><i class="bi bi-heart icono"></i></a>
@@ -166,17 +185,17 @@
                     </div>
                 </div>
                 <div class="trjProducto trjProducto--borde">
-                    <a href="./producto.html" title="Ver detalle">
+                    <a class="scale" href="./producto.html" title="Ver detalle">
                         <img class="imgAnchoTotal" src="../imagenes/base_cama_doble.png" alt="Base cama doble">
                     </a>
-                    <h3 class="trjProducto__titulo">Base cama doble</h3>
-                    <h4 class="trjProducto__titulo">$54.990</h4>
+                    <h5 class="trjProducto__titulo">Base cama doble</h5>
+                    <h5 class="trjProducto__titulo"><strong>$54.990</strong></h5>
                     <div class="trjProducto__icono">
                         <a href="./producto.html" title="Ver detalle"><i class="bi bi-eye icono"></i></i></a>
                         <a href="#" title="Lista deseos"><i class="bi bi-heart icono"></i></a>
                         <a href="#" title="Sumar al carro"><i class="bi bi-cart icono"></i></a>
                     </div>
-                </div>    
+                </div>
             </div>
         </section>
     </main>
@@ -255,5 +274,6 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>          
 </body>
 </html>

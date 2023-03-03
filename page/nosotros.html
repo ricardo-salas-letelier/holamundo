@@ -18,7 +18,7 @@
             <div class="cabGrid">
                 <div class="logo">
                     <a href="../index.html">
-                        <img src="../imagenes/logo_nombre.png" alt="Logo" title="Kupsa">
+                        <img class="imgAnchoTotal" src="../imagenes/logo_nombre.png" alt="Logo" title="Kupsa">
                     </a>
                 </div>
                 <div class="contacto">
@@ -45,17 +45,34 @@
                         </ul>
                     </div>
                 </div>  
-                <nav class="menu">
-                    <ul class="menu__opciones">
-                        <li class="menu__opciones__opcion"><a href="../index.html">Inicio</a></li>
-                        <li class="menu__opciones__opcion"><a href="./nosotros.html">Nosotros</a></li>
-                        <li class="menu__opciones__opcion"><a href="./productos.html">Productos</a></li>
-                        <li class="menu__opciones__opcion"><a href="./contacto.html">Contacto</a></li>
-                    </ul>
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav menu__opciones">
+                          <li class="nav-item menu__opciones__opcion">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                          </li>
+                          <li class="nav-item menu__opciones__opcion">
+                            <a class="nav-link" href="../page/nosotros.html">Nosotros</a>
+                          </li>
+                          <li class="nav-item menu__opciones__opcion">
+                            <a class="nav-link" href="../page/productos.html">Productos</a>
+                          </li>
+                          <li class="nav-item menu__opciones__opcion">
+                            <a class="nav-link" href="../page/contacto.html">Contacto</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                 </nav>
+                
                 <div class="buscar">
                     <div class="buscar__buscarImagenes">
-                        <div class="buscar__buscar">
+                        <div class="buscar__input">
                             <input type="text" name="buscar" placeholder="Buscar ...">
                             <a href="#"><i class="bi bi-search buscar__icono"></i></a>
                         </div>
@@ -113,30 +130,30 @@
             <div class="trjs trjs--caracteristicas">
                 <div class="trjCaracteristica">
                     <!--Despacho-->
-                    <h3 class="trjCaracteristica__titulo">
+                    <h5 class="trjCaracteristica__titulo">
                         <i class="bi bi-rocket-takeoff-fill icono icono--caracteristica"></i>Entrega rapida
-                    </h3>
+                    </h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
                 <div class="trjCaracteristica">
                     <!--Metodos de pago-->
-                    <h3 class="trjCaracteristica__titulo">
+                    <h5 class="trjCaracteristica__titulo">
                         <i class="bi bi-file-lock-fill icono icono--caracteristica"></i>Pago seguro
-                    </h3>
+                    </h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
                 <div class="trjCaracteristica">
                     <!--Tienda online-->
-                    <h3 class="trjCaracteristica__titulo">
+                    <h5 class="trjCaracteristica__titulo">
                         <i class="bi bi-phone-vibrate-fill icono icono--caracteristica"></i>Soporte 24/7
-                    </h3>
+                    </h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
                 <div class="trjCaracteristica">
                     <!--Politica de retorno-->
-                    <h3 class="trjCaracteristica__titulo">
+                    <h5 class="trjCaracteristica__titulo">
                         <i class="bi bi-arrow-counterclockwise icono icono--caracteristica"></i>Politica de Retorno
-                    </h3>
+                    </h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
             </div>
@@ -145,54 +162,62 @@
         <!--Tarjetas de Equipo-->
         <section class="secProductos">
             <div class="secNosotrosEqu__Titulo">
-                <h2>Nuestro Equipo</h2>
+                <h1>Nuestro Equipo</h1>
             </div>
-            <div class="trjs trjs--equipo">
-                <div class="trjEquipo">
-                    <img class="imgAnchoTotal" src="../imagenes/martinGrover.jpg" alt="Martin Grover">
-                    <h2>Martin Grover</h2>
-                    <h4>Director</h4>
-                    <i class="bi bi-dash-lg"></i>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quo quod animi 
-                        laudantium maxime est veniam! Natus unde eveniet eaque?
-                    </p>
-                    <div class="rrss">
-                        <a href="#"><i class="bi bi-facebook icono"></i></a>
-                        <a href="#"><i class="bi bi-twitter icono"></i></a>
-                        <a href="#"><i class="bi bi-linkedin icono"></i></a>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 p-5">
+                        <div class="trjEquipo">
+                            <img class="imgAnchoTotal" src="../imagenes/martinGrover.jpg" alt="Martin Grover">
+                            <h3>Martin Grover</h3>
+                            <h5>Director</h5>
+                            <i class="bi bi-dash-lg"></i>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quo quod animi 
+                                laudantium maxime est veniam! Natus unde eveniet eaque?
+                            </p>
+                            <div class="rrss">
+                                <a href="#"><i class="bi bi-facebook icono"></i></a>
+                                <a href="#"><i class="bi bi-twitter icono"></i></a>
+                                <a href="#"><i class="bi bi-linkedin icono"></i></a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="trjEquipo">
-                    <img class="imgAnchoTotal" src="../imagenes/loriaJacob.jpg" alt="Loria Jacob">
-                    <h2>Loria Jacob</h2>
-                    <h4>Ventas</h4>
-                    <i class="bi bi-dash-lg"></i>
-
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quo quod animi 
-                        laudantium maxime est veniam! Natus unde eveniet eaque?
-                    </p>
-                    <div class="rrss">
-                        <a href="#"><i class="bi bi-facebook icono"></i></a>
-                        <a href="#"><i class="bi bi-twitter icono"></i></a>
-                        <a href="#"><i class="bi bi-linkedin icono"></i></a>
+                    <div class="col-md-4 p-5">
+                        <div class="trjEquipo">
+                            <img class="imgAnchoTotal" src="../imagenes/loriaJacob.jpg" alt="Loria Jacob">
+                            <h3>Loria Jacob</h3>
+                            <h5>Ventas</h5>
+                            <i class="bi bi-dash-lg"></i>
+        
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quo quod animi 
+                                laudantium maxime est veniam! Natus unde eveniet eaque?
+                            </p>
+                            <div class="rrss">
+                                <a href="#"><i class="bi bi-facebook icono"></i></a>
+                                <a href="#"><i class="bi bi-twitter icono"></i></a>
+                                <a href="#"><i class="bi bi-linkedin icono"></i></a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="trjEquipo">
-                    <img class="imgAnchoTotal" src="../imagenes/tonyBrabar.jpg" alt="Tony Brabar">
-                    <h2>Tony Brabar</h2>
-                    <h4>Operaciones</h4>
-                    <i class="bi bi-dash-lg"></i>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quo quod animi 
-                        laudantium maxime est veniam! Natus unde eveniet eaque?
-                    </p>
-                    <div class="rrss">
-                        <a href="#"><i class="bi bi-facebook icono"></i></a>
-                        <a href="#"><i class="bi bi-twitter icono"></i></a>
-                        <a href="#"><i class="bi bi-linkedin icono"></i></a>
-                    </div>
+                    <div class="col-md-4 p-5">
+                        <div class="trjEquipo">
+                            <img class="imgAnchoTotal" src="../imagenes/tonyBrabar.jpg" alt="Tony Brabar">
+                            <h3>Tony Brabar</h3>
+                            <h5>Operaciones</h5>
+                            <i class="bi bi-dash-lg"></i>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quo quod animi 
+                                laudantium maxime est veniam! Natus unde eveniet eaque?
+                            </p>
+                            <div class="rrss">
+                                <a href="#"><i class="bi bi-facebook icono"></i></a>
+                                <a href="#"><i class="bi bi-twitter icono"></i></a>
+                                <a href="#"><i class="bi bi-linkedin icono"></i></a>
+                            </div>
+                        </div>
+                    </div>                    
                 </div>
             </div>
         </section>

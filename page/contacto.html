@@ -18,7 +18,7 @@
             <div class="cabGrid">
                 <div class="logo">
                     <a href="../index.html">
-                        <img src="../imagenes/logo_nombre.png" alt="Logo" title="Kupsa">
+                        <img class="imgAnchoTotal" src="../imagenes/logo_nombre.png" alt="Logo" title="Kupsa">
                     </a>
                 </div>
                 <div class="contacto">
@@ -45,17 +45,34 @@
                         </ul>
                     </div>
                 </div>  
-                <nav class="menu">
-                    <ul class="menu__opciones">
-                        <li class="menu__opciones__opcion"><a href="../index.html">Inicio</a></li>
-                        <li class="menu__opciones__opcion"><a href="./nosotros.html">Nosotros</a></li>
-                        <li class="menu__opciones__opcion"><a href="./productos.html">Productos</a></li>
-                        <li class="menu__opciones__opcion"><a href="./contacto.html">Contacto</a></li>
-                    </ul>
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav menu__opciones">
+                          <li class="nav-item menu__opciones__opcion">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                          </li>
+                          <li class="nav-item menu__opciones__opcion">
+                            <a class="nav-link" href="../page/nosotros.html">Nosotros</a>
+                          </li>
+                          <li class="nav-item menu__opciones__opcion">
+                            <a class="nav-link" href="../page/productos.html">Productos</a>
+                          </li>
+                          <li class="nav-item menu__opciones__opcion">
+                            <a class="nav-link" href="../page/contacto.html">Contacto</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                 </nav>
+
                 <div class="buscar">
                     <div class="buscar__buscarImagenes">
-                        <div class="buscar__buscar">
+                        <div class="buscar__input">
                             <input type="text" name="buscar" placeholder="Buscar ...">
                             <a href="#"><i class="bi bi-search buscar__icono"></i></a>
                         </div>

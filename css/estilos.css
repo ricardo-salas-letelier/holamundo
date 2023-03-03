@@ -177,7 +177,7 @@ body{
     flex-wrap: wrap;
 }
 .trjEquipo {
-    width: 300px;
+    /* width: 300px; */
     margin: 10px;
     padding: 7px;
     border-radius: 7px;
@@ -186,7 +186,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+    gap: 1px;
     border: 1px solid #555353;
 }
 /*--END Tarjetas--*/
@@ -263,7 +263,7 @@ body{
     color:inherit;
     font-size:18px;
 }
-.menu__opciones li:hover{
+.menu__opciones__opcion a:hover{
     background-color:#fff;
     color:#5a68e1;
 }
@@ -338,6 +338,9 @@ body{
 .pieTexto {
     grid-area: pieTexto;
 }
+.pieTexto p {
+    padding-right: 5px;
+}
 .pieEmpresa {
     grid-area: pieEmpresa;
 }
@@ -352,6 +355,7 @@ body{
 }
 .pieLista {
     list-style-type: none;
+    padding: 0px;
 }
 .pieLista li a {
     text-decoration: none;
