@@ -583,6 +583,13 @@ body{
     padding-top: 80px;
     width: 75%;
 }
+.navTabTxt {
+    font-size: x-large;
+    color: coral;
+}
+.navTabTxt:hover{
+    color:#5a68e1;
+}
 /*--END Cuerpo producto--*/
 /*************************/
 
