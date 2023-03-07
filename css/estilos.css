@@ -702,6 +702,9 @@ body{
     }   
 }
 @media screen and (max-width: 768px) {
+    .logo {
+        display: none;
+    }
     .secImagenGrande {
         height: 50vh;    
     }
@@ -744,6 +747,9 @@ body{
     }
     .pieTienda {
         order: 6;
+    }
+    .navTabTxt {
+        font-size: large;
     }
 }
 @media screen and (max-width: 320px) {
