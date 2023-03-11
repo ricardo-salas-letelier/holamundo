@@ -1,0 +1,91 @@
+/*--BEGIN mediaQuery--*/
+/**********************/
+@media screen and (max-width: 1024px) {
+    .secImagenGrande {
+        height: 70vh;      
+    }
+    .buscar__buscarImagenes {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .trjs--categorias {
+        display: flex;
+        flex-direction: column;
+    }
+    .trj {
+        height: 350px;
+        width: 60%;
+    }
+    .pieGrid {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .prdCategorias {
+        display: none;
+    }   
+}
+@media screen and (max-width: 768px) {
+    .logo {
+        display: none;
+    }
+    .secImagenGrande {
+        height: 50vh;    
+    }
+    .buscar__input, .nosotrosGrid, .contactoGrid {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .buscar__input input {
+        margin-bottom: 0px;
+    }
+    .trj {
+        height: 300px;
+        width: 70%;
+    }
+    .secHagamos {
+        padding-left: 0px
+    }
+    .prdView {
+        font-size: small;
+        border: none;
+        margin-left: 20px;
+    }
+    .pieImagen {
+        order: 1;
+    }
+    .pieTexto {
+        order: 2
+    }
+    .pieProductos {
+        order: 3;
+    }
+    .pieCuenta {
+        order: 4;
+    }
+    .pieEmpresa {
+        order: 5;
+    }
+    .pieTienda {
+        order: 6;
+    }
+    .navTabTxt {
+        font-size: large;
+    }
+}
+@media screen and (max-width: 320px) {
+    .secImagenGrande {
+        height: 30vh;      
+    }
+    .trj {
+        height: 250px;
+        width: 90%;
+    }
+}

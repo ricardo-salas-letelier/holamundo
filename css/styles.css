@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-style: normal;
+  font-family: "Calibri", sans-serif;
+}
+
+.lineaAbajo {
+  border-bottom: 1px solid #737272;
+}
+
+.lineaArriba {
+  border-top: 1px solid #737272;
+}
+
+.cabGrid {
+  background-color: #ffffff;
+  display: grid;
+  grid-template-areas: "logo contacto contacto" "logo menu     cuenta";
+  grid-template-columns: 1fr 3fr 3fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: stretch;
+  align-items: center;
+}
+.cabGrid .logo {
+  grid-area: logo;
+}
+.cabGrid .logo img {
+  width: 60%;
+  padding: 1%;
+}
+.cabGrid .contacto {
+  grid-area: contacto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: end;
+  align-items: center;
+}
+.cabGrid .menu {
+  grid-area: menu;
+}
+.cabGrid .menu .menu__opciones {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.cabGrid .menu .menu__opciones .menu__opciones__opcion {
+  text-align: center;
+  font-weight: bold;
+  color: coral;
+}
+.cabGrid .menu .menu__opciones .menu__opciones__opcion a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 18px;
+}
+.cabGrid .menu .menu__opciones .menu__opciones__opcion a:hover {
+  background-color: #fff;
+  color: #5a68e1;
+}
+.cabGrid .cuenta {
+  grid-area: cuenta;
+}
+.cabGrid .cuenta .menu__opciones {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: end;
+}
+.cabGrid .cuenta .menu__opciones .menu__opciones__opcion {
+  text-align: center;
+  font-weight: bold;
+  color: coral;
+}
+.cabGrid .cuenta .menu__opciones .menu__opciones__opcion a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 24px;
+}
+.cabGrid .cuenta .menu__opciones .menu__opciones__opcion a:hover {
+  background-color: #fff;
+  color: #5a68e1;
+}
+
+.rrss .rrss__iconoSmall {
+  font-size: small;
+}
+.rrss .rrss__iconoMedium {
+  font-size: medium;
+}
+.rrss .rrss__iconoLarge {
+  font-size: large;
+}
+.rrss .rrss__iconoXLarge {
+  font-size: x-large;
+}
+.rrss .rrss__iconoNoLink {
+  color: #5a68e1;
+}
+.rrss .rrss__items {
+  list-style-type: none;
+}
+.rrss .rrss__items .rrss__items__item {
+  text-align: center;
+  font-weight: bold;
+  color: coral;
+}
+.rrss .rrss__items .rrss__items__item a {
+  text-decoration: none;
+  color: inherit;
+}
+.rrss .rrss__items .rrss__items__item a:hover {
+  background-color: #fff;
+  color: #5a68e1;
+}
+
+.btnSubmit {
+  background-color: coral;
+  color: #353434;
+  font-weight: normal;
+}
+
+.btnSubmit:hover {
+  color: #ffffff;
+  background-color: #5a68e1;
+}
+
+.pieGrid {
+  background-color: #ffffff;
+  display: grid;
+  grid-template-areas: "pieImagen pieEmpresa pieTienda pieCuenta pieProductos" "pieTexto  pieEmpresa pieTienda pieCuenta pieProductos";
+  grid-template-columns: 3fr 2fr 2fr 2fr 2fr;
+  justify-content: start;
+  align-items: start;
+}
+.pieGrid .pieImagen {
+  grid-area: pieImagen;
+  justify-self: start;
+}
+.pieGrid .pieImagen img {
+  width: 30%;
+  padding: 1%;
+  justify-self: start;
+}
+.pieGrid .pieTexto {
+  grid-area: pieTexto;
+}
+.pieGrid .pieEmpresa {
+  grid-area: pieEmpresa;
+  border: 1px solid #737272;
+}
+.pieGrid .pieTienda {
+  grid-area: pieTienda;
+  border: 1px solid #737272;
+}
+.pieGrid .pieCuenta {
+  grid-area: pieCuenta;
+  border: 1px solid #737272;
+}
+.pieGrid .pieProductos {
+  grid-area: pieProductos;
+  border: 1px solid #737272;
+}/*# sourceMappingURL=styles.css.map */

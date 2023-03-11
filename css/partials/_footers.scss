@@ -1,0 +1,41 @@
+.pieGrid {
+    background-color: #ffffff;
+
+    display: grid;
+    grid-template-areas:
+    "pieImagen pieEmpresa pieTienda pieCuenta pieProductos"
+    "pieTexto  pieEmpresa pieTienda pieCuenta pieProductos";    
+    grid-template-columns: 3fr 2fr 2fr 2fr 2fr;
+    justify-content: start;
+    align-items:start;
+
+    .pieImagen {
+        grid-area: pieImagen;
+        justify-self: start;
+
+        img {
+            width: 30%;
+            padding: 1%;
+            justify-self: start;
+        }
+    }
+    .pieTexto {
+        grid-area: pieTexto;
+    }
+    .pieEmpresa {
+        grid-area: pieEmpresa;
+        border: $linea;
+    }
+    .pieTienda {
+        grid-area: pieTienda;
+        border: $linea;
+    }
+    .pieCuenta {
+        grid-area: pieCuenta;
+        border: $linea;
+    }
+    .pieProductos {
+        grid-area: pieProductos;
+        border: $linea;
+    }
+}

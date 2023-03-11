@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: normal;
+    font-family:'Calibri', sans-serif
+}
+$colorTxtLink: coral;
+$colorTxtLinkHover: #5a68e1;
+$linea: 1px solid #737272;
+
+.lineaAbajo {
+    border-bottom: $linea;
+}
+.lineaArriba {
+    border-top: $linea;
+}
+
