@@ -30,6 +30,13 @@
     }   
 }
 @media screen and (max-width: 768px) {
+    .pieGrid {
+        .dropdown {
+            .dropdown-content {
+                display: none;
+            }
+        }
+    } 
     .logo {
         display: none;
     }

@@ -135,8 +135,8 @@
   display: grid;
   grid-template-areas: "pieImagen pieEmpresa pieTienda pieCuenta pieProductos" "pieTexto  pieEmpresa pieTienda pieCuenta pieProductos";
   grid-template-columns: 3fr 2fr 2fr 2fr 2fr;
-  justify-content: start;
-  align-items: start;
+  justify-content: center;
+  align-items: stretch;
 }
 .pieGrid .pieImagen {
   grid-area: pieImagen;
@@ -152,17 +152,39 @@
 }
 .pieGrid .pieEmpresa {
   grid-area: pieEmpresa;
-  border: 1px solid #737272;
 }
 .pieGrid .pieTienda {
   grid-area: pieTienda;
-  border: 1px solid #737272;
 }
 .pieGrid .pieCuenta {
   grid-area: pieCuenta;
-  border: 1px solid #737272;
 }
 .pieGrid .pieProductos {
   grid-area: pieProductos;
-  border: 1px solid #737272;
+}
+.pieGrid .dropdown {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+.pieGrid .dropdown-content {
+  display: block;
+  position: absolute;
+  background-color: #ffffff;
+  width: 100%;
+  z-index: 1;
+}
+.pieGrid .dropdown:hover .dropdown-content {
+  display: block;
+}
+.pieGrid .pieLista {
+  list-style-type: none;
+  padding: 0px;
+}
+.pieGrid .pieLista li a {
+  text-decoration: none;
+  color: #5a68e1;
+}
+.pieGrid .pieLista li a:hover {
+  color: coral;
 }/*# sourceMappingURL=styles.css.map */
