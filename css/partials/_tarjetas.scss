@@ -1,0 +1,142 @@
+/*--Tarjetas--*/
+/**************/
+.trjs__categorias {
+    display: flex;
+    gap: 40px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .trj__categoria {
+        background-color: #ffffff;
+        height: 400px;
+        width: 50%;
+        padding: 40px;
+        background-size: cover;
+    
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    
+        a {
+            text-decoration:none;
+        }
+        .trj__titulo__categoria {
+            color: #a6a3a3;
+            background-color: #ffffff;
+            padding: 5px;
+            border-radius: 5px;
+        }
+    }
+    .trj__baseCama {
+        background-image: url("../imagenes/febrian-zakaria-ZP72QJ-Raq8-unsplash v1.1.jpg");
+        justify-content: start;
+        align-items: start;
+        border-radius: 5px;
+    }
+    .trj__veladores {
+        background-image: url("../imagenes/christopher-jolly-GqbU78bdJFM-unsplash.jpg");
+        justify-content: start;
+        align-items: start;
+        border-radius: 5px;
+    }
+    .trj__banquetas {
+        background-image: url("../imagenes/spacejoy-XM-miHibz64-unsplash.jpg");
+        justify-content: start;
+        align-items: start;
+        border-radius: 5px;
+    }    
+}
+.trjs__caracteristicas {
+    display: flex;
+    gap: 40px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .trj__caracteristica {
+        width: 250px;
+        background-color: #5a67e1aa;
+        margin: 10px;
+        padding: 7px;
+        border-radius: 7px;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 10px;
+
+        .trj__caracteristica__titulo {
+            color: #ffffff; 
+
+            .icono__caracteristica {
+                margin-right: 5px;
+                color: $colorTxtLinkHover;
+                font-weight: bold;
+                font-size: x-large;
+            }
+        }
+    }
+}
+.trjs__productos {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .trj__producto {
+        width: 250px;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 7px;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        .trj__producto__titulo {
+            color: #555353;
+        }
+        .trj__producto__iconos {
+            
+            a {
+                color: $colorTxtLink;
+            }
+            a:hover {
+                color:$colorTxtLinkHover;
+            }
+            .icono__producto {
+                margin-right: 10px;
+                font-weight: bold;
+                font-size: large;
+            }
+        }
+    }
+}
+.trjs__equipo {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .trj__equipo {
+        width: 20%;
+        margin-top: 10px;
+        padding: 5px;
+        border-radius: 7px;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1px;
+        border: 1px solid #555353;
+    }
+}
