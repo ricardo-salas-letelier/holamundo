@@ -5,9 +5,9 @@
 
     display: grid;
     grid-template-areas:
-    "pieImagen pieEmpresa pieTienda pieCuenta pieProductos"
-    "pieTexto  pieEmpresa pieTienda pieCuenta pieProductos";    
-    grid-template-columns: 3fr 2fr 2fr 2fr 2fr;
+    "pieImagen pieDetalles"
+    "pieTexto  pieDetalles";    
+    grid-template-columns: 3fr 8fr;
     justify-content: stretch;
     align-items: stretch;
 
@@ -24,43 +24,55 @@
     .pieTexto {
         grid-area: pieTexto;
     }
-    .pieEmpresa {
-        grid-area: pieEmpresa;
-    }
-    .pieTienda {
-        grid-area: pieTienda;
-    }
-    .pieCuenta {
-        grid-area: pieCuenta;
-    }
-    .pieProductos {
-        grid-area: pieProductos;
-    }
-    .dropdown {
-        position: relative;
-        display: inline-block;
-        width: 100%;
-    }      
-    .dropdown-content {
-        display: block;
-        position: absolute;
-        background-color: #ffffff;
-        width: 100%;
-        z-index: 1;
-    }  
-    .dropdown:hover .dropdown-content {
-        display: block;
-    }
-    .pieLista {
-        list-style-type: none;
-        padding: 0px;
+    .pieDetalles {
+        grid-area: pieDetalles;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 20px;
     
-        li a {
-            text-decoration: none;
-            color: $colorTxtLinkHover;
+        .pieEmpresa {
+            padding: 3px;
+            width: 25%;
         }
-        li a:hover {
-            color: $colorTxtLink;
+        .pieTienda {
+            padding: 3px;
+            width: 25%;
+        }
+        .pieCuenta {
+            padding: 3px;
+            width: 25%;
+        }
+        .pieProductos {
+            padding: 3px;
+            width: 25%;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+        }      
+        .dropdown-content {
+            display: block;
+            position: absolute;
+            background-color: #ffffff;
+            width: 100%;
+            z-index: 1;
+        }  
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .pieLista {
+            list-style-type: none;
+            padding: 0px;
+        
+            li a {
+                text-decoration: none;
+                color: $colorTxtLinkHover;
+            }
+            li a:hover {
+                color: $colorTxtLink;
+            }
         }
     }  
 }

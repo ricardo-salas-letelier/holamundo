@@ -4,14 +4,14 @@
     display: flex;
     gap: 40px;
     flex-direction: row;
-    justify-content: center;
+    justify-content: stretch;
     align-items: center;
     flex-wrap: wrap;
 
     .trj__categoria {
         background-color: #ffffff;
-        height: 400px;
-        width: 50%;
+        height: 300px;
+        width: 30%;
         padding: 40px;
         background-size: cover;
     
@@ -31,20 +31,20 @@
     }
     .trj__baseCama {
         background-image: url("../imagenes/febrian-zakaria-ZP72QJ-Raq8-unsplash v1.1.jpg");
-        justify-content: start;
-        align-items: start;
+        justify-content: flex-start;
+        align-items: flex-start;
         border-radius: 5px;
     }
     .trj__veladores {
         background-image: url("../imagenes/christopher-jolly-GqbU78bdJFM-unsplash.jpg");
-        justify-content: start;
-        align-items: start;
+        justify-content: flex-start;
+        align-items: flex-start;
         border-radius: 5px;
     }
     .trj__banquetas {
         background-image: url("../imagenes/spacejoy-XM-miHibz64-unsplash.jpg");
-        justify-content: start;
-        align-items: start;
+        justify-content: flex-start;
+        align-items: flex-start;
         border-radius: 5px;
     }    
 }

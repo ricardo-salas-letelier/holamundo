@@ -4,21 +4,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-style: normal;
-    font-family:'Calibri', sans-serif
+    font-style: $estiloFont;
+    font-family: $familiaFont;
 }
 
 body {
-    margin-left: 3%;
-    margin-right: 3%;
+    margin-left: $marCuerpoIzq;
+    margin-right: $marCuerpoDer;
 }
 footer {
     margin-top: 100px;
 }
-
-$colorTxtLink: coral;
-$colorTxtLinkHover: #5a68e1;
-$linea: 1px solid #737272;
 
 .lineaAbajo {
     border-bottom: $linea;

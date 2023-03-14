@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*--Seteo inicial--*/
 /*******************/
 * {
@@ -153,14 +154,14 @@ footer {
   display: flex;
   gap: 40px;
   flex-direction: row;
-  justify-content: center;
+  justify-content: stretch;
   align-items: center;
   flex-wrap: wrap;
 }
 .trjs__categorias .trj__categoria {
   background-color: #ffffff;
-  height: 400px;
-  width: 50%;
+  height: 300px;
+  width: 30%;
   padding: 40px;
   background-size: cover;
   display: flex;
@@ -178,20 +179,20 @@ footer {
 }
 .trjs__categorias .trj__baseCama {
   background-image: url("../imagenes/febrian-zakaria-ZP72QJ-Raq8-unsplash v1.1.jpg");
-  justify-content: start;
-  align-items: start;
+  justify-content: flex-start;
+  align-items: flex-start;
   border-radius: 5px;
 }
 .trjs__categorias .trj__veladores {
   background-image: url("../imagenes/christopher-jolly-GqbU78bdJFM-unsplash.jpg");
-  justify-content: start;
-  align-items: start;
+  justify-content: flex-start;
+  align-items: flex-start;
   border-radius: 5px;
 }
 .trjs__categorias .trj__banquetas {
   background-image: url("../imagenes/spacejoy-XM-miHibz64-unsplash.jpg");
-  justify-content: start;
-  align-items: start;
+  justify-content: flex-start;
+  align-items: flex-start;
   border-radius: 5px;
 }
 
@@ -292,7 +293,7 @@ footer {
   background-color: #ffffff;
   display: grid;
   grid-template-areas: "logo contacto contacto" "logo menu     cuenta";
-  grid-template-columns: 1fr 4fr 2fr;
+  grid-template-columns: 1fr 5fr 1fr;
   grid-template-rows: 1fr 1fr;
   justify-items: stretch;
   align-items: center;
@@ -333,7 +334,6 @@ footer {
   font-size: 18px;
 }
 .cabGrid .menu .menu__opciones .menu__opciones__opcion a:hover {
-  background-color: #fff;
   color: #5a68e1;
 }
 .cabGrid .cuenta {
@@ -366,8 +366,8 @@ footer {
 .pieGrid {
   background-color: #ffffff;
   display: grid;
-  grid-template-areas: "pieImagen pieEmpresa pieTienda pieCuenta pieProductos" "pieTexto  pieEmpresa pieTienda pieCuenta pieProductos";
-  grid-template-columns: 3fr 2fr 2fr 2fr 2fr;
+  grid-template-areas: "pieImagen pieDetalles" "pieTexto  pieDetalles";
+  grid-template-columns: 3fr 8fr;
   justify-content: stretch;
   align-items: stretch;
 }
@@ -383,42 +383,53 @@ footer {
 .pieGrid .pieTexto {
   grid-area: pieTexto;
 }
-.pieGrid .pieEmpresa {
-  grid-area: pieEmpresa;
+.pieGrid .pieDetalles {
+  grid-area: pieDetalles;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 20px;
 }
-.pieGrid .pieTienda {
-  grid-area: pieTienda;
+.pieGrid .pieDetalles .pieEmpresa {
+  padding: 3px;
+  width: 25%;
 }
-.pieGrid .pieCuenta {
-  grid-area: pieCuenta;
+.pieGrid .pieDetalles .pieTienda {
+  padding: 3px;
+  width: 25%;
 }
-.pieGrid .pieProductos {
-  grid-area: pieProductos;
+.pieGrid .pieDetalles .pieCuenta {
+  padding: 3px;
+  width: 25%;
 }
-.pieGrid .dropdown {
+.pieGrid .pieDetalles .pieProductos {
+  padding: 3px;
+  width: 25%;
+}
+.pieGrid .pieDetalles .dropdown {
   position: relative;
   display: inline-block;
   width: 100%;
 }
-.pieGrid .dropdown-content {
+.pieGrid .pieDetalles .dropdown-content {
   display: block;
   position: absolute;
   background-color: #ffffff;
   width: 100%;
   z-index: 1;
 }
-.pieGrid .dropdown:hover .dropdown-content {
+.pieGrid .pieDetalles .dropdown:hover .dropdown-content {
   display: block;
 }
-.pieGrid .pieLista {
+.pieGrid .pieDetalles .pieLista {
   list-style-type: none;
   padding: 0px;
 }
-.pieGrid .pieLista li a {
+.pieGrid .pieDetalles .pieLista li a {
   text-decoration: none;
   color: #5a68e1;
 }
-.pieGrid .pieLista li a:hover {
+.pieGrid .pieDetalles .pieLista li a:hover {
   color: coral;
 }
 
@@ -646,16 +657,87 @@ footer {
     flex-wrap: wrap;
     gap: 10px;
   }
+  .pieGrid .pieDetalles {
+    width: 100%;
+  }
+  .trjs__categorias .trj__categoria {
+    height: 210px;
+    width: 30%;
+  }
 }
 @media screen and (max-width: 768px) {
-  footer {
-    margin-bottom: 350px;
-  }
   .pieGrid .dropdown .dropdown-content {
     display: none;
   }
+  .pieGrid .pieDetalles {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .pieGrid .pieDetalles .pieEmpresa {
+    width: 60%;
+  }
+  .pieGrid .pieDetalles .pieEmpresa h3 {
+    color: coral;
+  }
+  .pieGrid .pieDetalles .pieEmpresa h3:hover {
+    color: #5a68e1;
+  }
+  .pieGrid .pieDetalles .pieEmpresa h3::after {
+    content: "  ≡";
+  }
+  .pieGrid .pieDetalles .pieTienda {
+    width: 60%;
+  }
+  .pieGrid .pieDetalles .pieTienda h3 {
+    color: coral;
+  }
+  .pieGrid .pieDetalles .pieTienda h3:hover {
+    color: #5a68e1;
+  }
+  .pieGrid .pieDetalles .pieTienda h3::after {
+    content: "  ≡";
+  }
+  .pieGrid .pieDetalles .pieCuenta {
+    width: 60%;
+  }
+  .pieGrid .pieDetalles .pieCuenta h3 {
+    color: coral;
+  }
+  .pieGrid .pieDetalles .pieCuenta h3:hover {
+    color: #5a68e1;
+  }
+  .pieGrid .pieDetalles .pieCuenta h3::after {
+    content: "  ≡";
+  }
+  .pieGrid .pieDetalles .pieProductos {
+    width: 60%;
+  }
+  .pieGrid .pieDetalles .pieProductos h3 {
+    color: coral;
+  }
+  .pieGrid .pieDetalles .pieProductos h3:hover {
+    color: #5a68e1;
+  }
+  .pieGrid .pieDetalles .pieProductos h3::after {
+    content: "  ≡";
+  }
+  .pieGrid .pieDetalles .dropdown-content {
+    border: 1px solid #737272;
+    border-radius: 2px;
+  }
+  .pieGrid .pieDetalles .dropdown-content ul li {
+    margin-left: 5px;
+  }
   .logo {
     display: none;
+  }
+  .trjs__categorias {
+    flex-direction: column;
+  }
+  .trjs__categorias .trj__categoria {
+    height: 300px;
+    width: 60%;
   }
   .secNosotros {
     display: flex;
@@ -701,8 +783,12 @@ footer {
   }
 }
 @media screen and (max-width: 320px) {
-  footer {
-    margin-bottom: 350px;
+  .trjs__categorias {
+    flex-direction: column;
+  }
+  .trjs__categorias .trj__categoria {
+    height: 200px;
+    width: 80%;
   }
   .pieGrid {
     display: flex;

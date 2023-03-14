@@ -6,21 +6,101 @@
         flex-direction: row;
         flex-wrap: wrap;
         gap: 10px;
-    } 
+
+        .pieDetalles {
+            width: 100%;
+        }
+    }
+    
+    .trjs__categorias {
+        .trj__categoria {
+            height: calc(300px * 0.7);
+            width: 30%;
+        }
+    }
 }
 @media screen and (max-width: 768px) {
-    footer {
-        margin-bottom: 350px;      
-    }
     .pieGrid {
         .dropdown {
             .dropdown-content {
                 display: none;
             }
         }
+        .pieDetalles {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            .pieEmpresa {
+                width: 60%;
+                h3 {
+                    color: $colorTxtLink;
+                    &:hover {
+                        color: $colorTxtLinkHover;  
+                    }
+                }
+                h3::after {
+                    content: "  ≡";
+                }
+            }
+            .pieTienda {
+                width: 60%;
+                h3 {
+                    color: $colorTxtLink;
+                    &:hover {
+                        color: $colorTxtLinkHover;  
+                    }
+                }
+                h3::after {
+                    content: "  ≡";
+                }
+            }
+            .pieCuenta {
+                width: 60%;
+                h3 {
+                    color: $colorTxtLink;
+                    &:hover {
+                        color: $colorTxtLinkHover;  
+                    }
+                }
+                h3::after {
+                    content: "  ≡";
+                }
+            }
+            .pieProductos {
+                width: 60%;
+                h3 {
+                    color: $colorTxtLink;
+                    &:hover {
+                        color: $colorTxtLinkHover;  
+                    }
+                }
+                h3::after {
+                    content: "  ≡";
+                }
+            }
+            .dropdown-content {
+                border: $linea;
+                border-radius: 2px;
+            }  
+            .dropdown-content {
+                ul {
+                    li {
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
     } 
     .logo {
         display: none;
+    }
+    .trjs__categorias {
+        flex-direction: column;
+        .trj__categoria {
+            height: 300px;
+            width: 60%;
+        }
     }
     .secNosotros {
         display: flex;
@@ -67,8 +147,12 @@
     }
 }
 @media screen and (max-width: 320px) {
-    footer {
-        margin-bottom: 350px;      
+    .trjs__categorias {
+        flex-direction: column;
+        .trj__categoria {
+            height: 200px;
+            width: 80%;
+        }
     }
     .pieGrid {
         display: flex;
