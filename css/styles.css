@@ -8,6 +8,11 @@
   font-family: "Calibri", sans-serif;
 }
 
+body {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
 .lineaAbajo {
   border-bottom: 1px solid #737272;
 }
@@ -275,7 +280,7 @@
   background-color: #ffffff;
   display: grid;
   grid-template-areas: "logo contacto contacto" "logo menu     cuenta";
-  grid-template-columns: 1fr 3fr 3fr;
+  grid-template-columns: 1fr 4fr 2fr;
   grid-template-rows: 1fr 1fr;
   justify-items: stretch;
   align-items: center;
@@ -456,6 +461,50 @@
   font-size: x-large;
   margin: auto;
   width: 50%;
+}
+
+/*--Cuerpo contacto--*/
+/*********************/
+.secContacto {
+  background-color: #ffffff;
+  display: grid;
+  grid-template-areas: "hagamos contactenos";
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-content: start;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 3%;
+}
+.secContacto .hagamos {
+  grid-area: hagamos;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid #737272;
+  border-radius: 7px;
+}
+.secContacto .hagamos .hagamos__item {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  margin-left: 10px;
+}
+.secContacto .hagamos .hagamos__item .hagamos__item__icono {
+  margin-right: 5px;
+  font-size: large;
+  color: #5a68e1;
+}
+.secContacto .contactenos {
+  grid-area: contactenos;
+  border: 1px solid #737272;
+  border-radius: 7px;
+  padding-right: 0px;
+}
+.secContacto .contacto__titulo {
+  font-weight: bold;
 }
 
 /*--@media query--*/

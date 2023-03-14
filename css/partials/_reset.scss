@@ -7,6 +7,12 @@
     font-style: normal;
     font-family:'Calibri', sans-serif
 }
+
+body {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
 $colorTxtLink: coral;
 $colorTxtLinkHover: #5a68e1;
 $linea: 1px solid #737272;
@@ -17,4 +23,5 @@ $linea: 1px solid #737272;
 .lineaArriba {
     border-top: $linea;
 }
+
 
