@@ -8,7 +8,7 @@
     "pieImagen pieEmpresa pieTienda pieCuenta pieProductos"
     "pieTexto  pieEmpresa pieTienda pieCuenta pieProductos";    
     grid-template-columns: 3fr 2fr 2fr 2fr 2fr;
-    justify-content: center;
+    justify-content: stretch;
     align-items: stretch;
 
     .pieImagen {

@@ -13,6 +13,10 @@
 
     .secNosotrosImg {
         grid-area: secNosotrosImg;
+
+        img {
+            width: 100%;
+        }
     }
     .secNosotrosTxt {
         grid-area: secNosotrosTxt;
@@ -31,7 +35,6 @@
 }
 .secEquipo {
     margin-top: 100px;
-    margin-bottom: 100px;
 
     .secNosotros__titulo {
         text-align: center;

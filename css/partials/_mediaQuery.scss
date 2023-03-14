@@ -1,35 +1,17 @@
 /*--@media query--*/
 /**********************/
 @media screen and (max-width: 1024px) {
-    .secImagenGrande {
-        height: 70vh;      
-    }
-    .buscar__buscarImagenes {
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-    .trjs--categorias {
-        display: flex;
-        flex-direction: column;
-    }
-    .trj {
-        height: 350px;
-        width: 60%;
-    }
     .pieGrid {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         gap: 10px;
-    }
-    .prdCategorias {
-        display: none;
-    }   
+    } 
 }
 @media screen and (max-width: 768px) {
+    footer {
+        margin-bottom: 350px;      
+    }
     .pieGrid {
         .dropdown {
             .dropdown-content {
@@ -40,30 +22,27 @@
     .logo {
         display: none;
     }
-    .secImagenGrande {
-        height: 50vh;    
-    }
-    .buscar__input, .nosotrosGrid, .contactoGrid {
+    .secNosotros {
         display: flex;
         flex-direction: column;
-        justify-content: start;
+        justify-content: space-evenly;
+    }
+    .secContacto {
+        display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
         gap: 20px;
+
+        .hagamos {
+            width: 100%;
+        }
     }
-    .buscar__input input {
-        margin-bottom: 0px;
+    .secProducts .divCategorias {
+        display: none;
     }
-    .trj {
-        height: 300px;
-        width: 70%;
-    }
-    .secHagamos {
-        padding-left: 0px
-    }
-    .prdView {
-        font-size: small;
-        border: none;
-        margin-left: 20px;
+    .producto__justificacion {
+        justify-content: center;
     }
     .pieImagen {
         order: 1;
@@ -88,11 +67,33 @@
     }
 }
 @media screen and (max-width: 320px) {
-    .secImagenGrande {
-        height: 30vh;      
+    footer {
+        margin-bottom: 350px;      
     }
-    .trj {
-        height: 250px;
-        width: 90%;
+    .pieGrid {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-content: stretch;
+    }
+    .secNosotros {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .secEquipo .trjs__equipo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;  
+    }
+    .secUnProducto {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .navTabTxt {
+        font-size: medium;
     }
 }
