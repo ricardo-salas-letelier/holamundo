@@ -2,6 +2,9 @@
 /****************/
 .secCategorias {
     margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .sec__titulo {
     text-align: center;

@@ -5,8 +5,8 @@
 
     display: grid;
     grid-template-areas:
-    "logo contacto contacto"
-    "logo menu     cuenta";    
+    "contacto contacto contacto"
+    "logo     menu     cuenta";    
     grid-template-columns: 1fr 5fr 1fr;
     grid-template-rows: 1fr 1fr;
     justify-items: stretch;
@@ -14,9 +14,10 @@
 
     .logo {
         grid-area: logo;
+        width: 80px;
 
         & img {
-            width: 60%;
+            width: 100%;
             padding: 1%;
         }
     }

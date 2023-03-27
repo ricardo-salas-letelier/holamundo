@@ -15,7 +15,6 @@
     .trjs__categorias {
         .trj__categoria {
             height: calc(300px * 0.7);
-            width: 30%;
         }
     }
 }
@@ -65,14 +64,12 @@
             }           
         }       
     } 
-    .logo {
-        display: none;
-    }
+
     .trjs__categorias {
         flex-direction: column;
         .trj__categoria {
-            height: 300px;
-            width: 60%;
+            height: 350px;
+            width: 80%;
         }
     }
     .secNosotros {
@@ -117,6 +114,15 @@
     }
     .navTabTxt {
         font-size: large;
+    }
+}
+@media screen and (max-width: 555px) {
+    .trjs__categorias {
+        flex-direction: column;
+        .trj__categoria {
+            height: 300px;
+            width: 80%;
+        }
     }
 }
 @media screen and (max-width: 320px) {

@@ -152,9 +152,9 @@ footer {
 /**************/
 .trjs__categorias {
   display: flex;
-  gap: 40px;
+  gap: 20px;
   flex-direction: row;
-  justify-content: stretch;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -162,11 +162,11 @@ footer {
   background-color: #ffffff;
   height: 300px;
   width: 30%;
-  padding: 40px;
+  padding: 20px;
   background-size: cover;
   display: flex;
   justify-content: center;
-  align-items: end;
+  align-items: center;
 }
 .trjs__categorias .trj__categoria a {
   text-decoration: none;
@@ -292,7 +292,7 @@ footer {
 .cabGrid {
   background-color: #ffffff;
   display: grid;
-  grid-template-areas: "logo contacto contacto" "logo menu     cuenta";
+  grid-template-areas: "contacto contacto contacto" "logo     menu     cuenta";
   grid-template-columns: 1fr 5fr 1fr;
   grid-template-rows: 1fr 1fr;
   justify-items: stretch;
@@ -300,9 +300,10 @@ footer {
 }
 .cabGrid .logo {
   grid-area: logo;
+  width: 80px;
 }
 .cabGrid .logo img {
-  width: 60%;
+  width: 100%;
   padding: 1%;
 }
 .cabGrid .contacto {
@@ -437,6 +438,9 @@ footer {
 /****************/
 .secCategorias {
   margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .sec__titulo {
@@ -668,7 +672,6 @@ footer {
   }
   .trjs__categorias .trj__categoria {
     height: 210px;
-    width: 30%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -735,15 +738,12 @@ footer {
   .pieGrid .pieDetalles .dropdown-content ul li {
     margin-left: 5px;
   }
-  .logo {
-    display: none;
-  }
   .trjs__categorias {
     flex-direction: column;
   }
   .trjs__categorias .trj__categoria {
-    height: 300px;
-    width: 60%;
+    height: 350px;
+    width: 80%;
   }
   .secNosotros {
     display: flex;
@@ -786,6 +786,15 @@ footer {
   }
   .navTabTxt {
     font-size: large;
+  }
+}
+@media screen and (max-width: 555px) {
+  .trjs__categorias {
+    flex-direction: column;
+  }
+  .trjs__categorias .trj__categoria {
+    height: 300px;
+    width: 80%;
   }
 }
 @media screen and (max-width: 320px) {
